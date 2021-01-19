@@ -1,0 +1,10 @@
+#video-gride {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+video {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
