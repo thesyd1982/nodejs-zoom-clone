@@ -26,7 +26,7 @@ io.on("connection", (socket) => {
   socket.on("join-room", (roomId, userId) => {
     console.log(`Server :userId_${userId} is connected to the ${roomId}`)
     socket.join(roomId)
-    let source = "/video/bbb.mp4"
+    let source = "/video/user1.mp4"
     socket.to(roomId).broadcast.emit("user-connected", userId, source)
     // io.to(roomId).broadcast.emit("user-connected")
   })
